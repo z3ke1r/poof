@@ -1,5 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
+import {Observable} from "rxjs/Observable";
+import {HttpClient} from "@angular/common/http";
+import * as _ from 'lodash';
+
+interface Fart {
+    type: string;
+    smell_scale:number;
+    noise_scale:number;
+    score:number;
+    date_farted:Date; 
+    city:string;
+    user:string;
+}
 
 @Component({
   selector: 'app-root',
