@@ -383,9 +383,9 @@
   </div>
 
   <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection.value">
-      <pre *ngSwitchDefault>ng generate component xyz</pre>
-      <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+  <div class="terminal" *ngFor="let fart of farts" [ngSwitch]="selection.value">
+      <pre *ngSwitchDefault>{{fart.type}}</pre>
+      <pre *ngSwitchCase="'material'"><i class="material-icons">volume_up</i>: {{fart.noise_scale}},  <i class="material-icons">face</i>:{{fart.smell_scale}}</pre>
       <pre *ngSwitchCase="'dependency'">ng add _____</pre>
       <pre *ngSwitchCase="'test'">ng test</pre>
       <pre *ngSwitchCase="'build'">ng build --prod</pre>
