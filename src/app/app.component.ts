@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
-import {Observable} from "rxjs/Observable";
 import {HttpClient} from "@angular/common/http";
-import * as _ from 'lodash';
 
 interface Fart {
     type: string;
@@ -23,15 +21,14 @@ export class AppComponent implements OnInit {
   
   title = 'poof';
 
-  farts = [];
+  farts;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-
-    this.dataService.sendGetRequest().subscribe((data: any[])=>{
+    this.dataService.getFarts().subscribe((data)=>{
       console.log(data);
-      this.farts = data;
+      this.farts = data['farts'];
     })  
   }
 }
