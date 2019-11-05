@@ -320,6 +320,15 @@
   </a>
 </div>
 
+<div *ngFor="let fart of farts">
+  <h2>{{fart.type}}</h2>
+    <p>
+      {{fart.user}}
+      {{fart.score}}
+      {{fart.smell_scale}}
+    </p>
+</div>
+
 <div class="content" role="main">
 
 
