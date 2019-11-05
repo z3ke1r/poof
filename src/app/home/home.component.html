@@ -1,1 +1,12 @@
 <p>home works!</p>
+
+
+<div *ngFor="let fart of farts">
+  <h2>{{fart.user}}</h2>
+
+    <p>
+      {{fart.type}}
+      {{fart.score}}
+      {{fart.smell_scale}}
+    </p>
+</div>
