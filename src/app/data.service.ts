@@ -11,5 +11,6 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
   
   public getFarts(){
+    console.log(this.httpClient.get(this.REST_API_SERVER));
     return this.httpClient.get(this.REST_API_SERVER); }
 }
