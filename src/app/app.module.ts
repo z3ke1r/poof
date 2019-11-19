@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './register/register.component';
 import { AngularMaterialModule } from './angular-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AngularMaterialModule } from './angular-material.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
