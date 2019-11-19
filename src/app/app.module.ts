@@ -4,8 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
+import { AngularMaterialModule } from './angular-material.module';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NoopAnimationsModule,
-    MatCardModule
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
