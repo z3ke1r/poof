@@ -7,10 +7,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './register/register.component';
-import { AngularMaterialModule } from './angular-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material';
+import {
+   MatButtonModule,
+   MatToolbarModule,
+   MatIconModule,
+   MatBadgeModule,
+   MatSidenavModule,
+   MatListModule,
+   MatGridListModule,
+   MatFormFieldModule,
+   MatInputModule,
+   MatSelectModule,
+   MatRadioModule,
+   MatDatepickerModule,
+   MatNativeDateModule,
+   MatChipsModule,
+   MatTooltipModule,
+   MatTableModule,
+   MatPaginatorModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,8 +41,23 @@ import { MatCardModule } from '@angular/material';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
-    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatBadgeModule,
+    MatListModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatChipsModule,
+    MatTooltipModule,
+    MatTableModule,
+    MatPaginatorModule,
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule
