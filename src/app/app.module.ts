@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { AngularMaterialModule } from './angular-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    MatCardModule,
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule
