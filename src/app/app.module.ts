@@ -42,6 +42,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     HomeComponent,
     LogInComponent,
     RegisterComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    FeedComponent
   ],
   
   imports: [
