@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
   
-  REST_API_SERVER = "http://35.193.170.225:8000/farts/1/";
+  REST_API_SERVER = "http://35.222.122.58:8000/farts/1/";
 
   constructor(private httpClient: HttpClient) { }
   
