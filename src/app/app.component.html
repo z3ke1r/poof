@@ -1,15 +1,29 @@
 
 <!-- Toolbar -->
 <mat-toolbar color="accent">
+  <mat-icon class="main-toolbar-icon" aria-hidden="false" aria-label="Poof Logo">filter_drama</mat-icon>
   <span>Poof!</span>
+  <span class="main-toolbar-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="login" routerLinkActive="active">
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </button>
+    <button mat-menu-item routerLink="register" routerLinkActive="active">
+      <mat-icon>person_add</mat-icon>
+      <span>Check voice mail</span>
+    </button>
+  </mat-menu>
 
-  <!-- This fills the remaining space of the current row -->
-  <span class="toolbar-fill"></span>
-
-  <span class="nav-tool-items">
-    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
-    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
-  </span>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
+
+
+<!-- <span class="nav-tool-items">
+    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+  </span> -->
