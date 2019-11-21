@@ -2,11 +2,32 @@
 
 
 <div>
-  <h2>{{farts.user.username}}</h2>
+  <h2>{{farts[1].user.username}}</h2>
 
-    <p>
-      {{farts.type.name}}
-      {{farts.score}}
-      {{farts.smell_scale}}
-    </p>
+  <p>Type: {{farts[1].type.name}}</p>
+  <p>Score: {{farts[1].score}}</p>
+  <p>Smell: {{farts[1].smell_scale}}</p>
 </div>
+
+<div fxLayout='row' fxLayoutWrap class="cards">
+
+<div fxFlex="20" class="example-card">
+<mat-card *ngFor="let fart of farts" style="margin-top:10px;>
+  <mat-card-header>
+    <mat-card-title>{{film.title}}</mat-card-title>
+    <mat-card-subtitle>{{film.release_date}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{film.poster_path}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{film.overview}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
