@@ -41,13 +41,15 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LogInComponent,
-    RegisterComponent
+    RegisterComponent,
+    UserProfileComponent
   ],
   
   imports: [
