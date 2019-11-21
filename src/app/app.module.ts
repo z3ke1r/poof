@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
    MatButtonModule,
+   MatCardModule,
    MatToolbarModule,
    MatIconModule,
    MatBadgeModule,
@@ -41,6 +42,7 @@ import {
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatCardModule,
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
