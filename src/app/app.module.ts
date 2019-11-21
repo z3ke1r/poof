@@ -9,26 +9,16 @@ import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './register/register.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {
-   MatButtonModule,
-   MatCardModule,
-   MatToolbarModule,
-   MatIconModule,
-   MatBadgeModule,
-   MatSidenavModule,
-   MatListModule,
-   MatGridListModule,
-   MatFormFieldModule,
-   MatInputModule,
-   MatSelectModule,
-   MatRadioModule,
-   MatDatepickerModule,
-   MatNativeDateModule,
-   MatChipsModule,
-   MatTooltipModule,
-   MatTableModule,
-   MatPaginatorModule
-} from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -37,6 +27,7 @@ import {
     LogInComponent,
     RegisterComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -46,20 +37,11 @@ import {
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule,
-    MatBadgeModule,
-    MatListModule,
-    MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatNativeDateModule,
-    MatChipsModule,
-    MatTooltipModule,
-    MatTableModule,
-    MatPaginatorModule,
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule
