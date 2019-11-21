@@ -6,11 +6,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
   
-  REST_API_SERVER = "http://35.222.122.58:8000/farts/1/";
+  REST_API_SERVER = "http://35.222.122.58:8000/";
+  FART_ENDPOINT = REST_API_SERVER + "farts/";
+  USER_ENDPOINT = REST_API_SERVER + "users/";
+  
 
   constructor(private httpClient: HttpClient) { }
   
   public getFarts(){
-    console.log(this.httpClient.get(this.REST_API_SERVER));
-    return this.httpClient.get(this.REST_API_SERVER); }
+    console.log(this.httpClient.get(this.FART_ENDPOINT));
+    return this.httpClient.get(this.FART_ENDPOINT); }
+  
+  public getUsers(){
+    console.log(this.httpClient.get(this.USER_ENDPOINT));
+    return this.httpClient.get(this.USER_ENDPOINT); }
+  
 }
