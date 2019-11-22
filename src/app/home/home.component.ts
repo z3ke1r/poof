@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +7,10 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
   
-  farts: any;
 
-  constructor(private dataService: DataService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.dataService.getFarts().subscribe((data)=>{
-      console.log(data);
-      this.farts = data;
-    });
   }
 
 }
