@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
+//import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +7,10 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
-  farts: any;
 
-  constructor(private dataService: DataService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.dataService.getFarts().subscribe((data)=>{
-      console.log(data);
-      this.farts = data;
-    });
   }
+  
 }
