@@ -12,18 +12,16 @@
 <div fxLayout='row' fxLayoutWrap class="cards">
 
   <div fxFlex="20" class="example-card">
-    <mat-card class="example-card">
+    <mat-card class="example-card" *ngFor="let fart of farts" style="margin-top:10px;>
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-title>{{fart.type.name}}</mat-card-title>
+        <mat-card-subtitle>{{fart.user.username}}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="https://maps.googleapis.com/maps/api/staticmap?center=Denver,CO&zoom=14&size=400x400&key=AIzaSyBCQYEWCi73jdQrJjsC7M_COOSY6FCToYk" alt="Photo of a Shiba Inu">
       <mat-card-content>
         <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
+          This poof has a score of <b>{{fart.score}}</b> and smelled awful <b>{{fart.smell_scale}}&sol;10</b>
         </p>
       </mat-card-content>
       <mat-card-actions>
