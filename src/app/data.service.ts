@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
   
-  FART_ENDPOINT = "http://34.66.210.130:8000/farts/2/";
+  FART_ENDPOINT = "https://34.66.210.130:8888/farts/2/";
   USER_ENDPOINT = "http://34.66.210.130:8000/users/";
   
 
