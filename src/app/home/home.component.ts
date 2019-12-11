@@ -7,13 +7,13 @@ import { DataService } from '../data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
-  farts: any;
+
+  farts: any = [];
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getFarts().subscribe((data)=>{
+    this.dataService.getFarts().subscribe(data => {
       console.log(data);
       this.farts = data;
     });

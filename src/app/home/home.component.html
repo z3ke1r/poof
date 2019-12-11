@@ -1,31 +1,24 @@
-<p>home works!</p>
 
+<div fxLayout='row' fxLayoutWrap class="cards">
 
-<div>
-  <h2>{{farts.user.username}}</h2>
-
-  <p>Type: {{farts.type.name}}</p>
-  <p>Score: {{farts.score}}</p>
-  <p>Smell: {{farts.smell_scale}}</p>
+  <div fxFlex="20" class="example-card" *ngFor="let fart of farts.results">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{fart.user.username}}</mat-card-title>
+        <mat-card-subtitle>{{fart.type.name}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://maps.googleapis.com/maps/api/staticmap?center=Denver,CO&zoom=13&size=300x300&maptype=roadmap
+         &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&key=" alt="Static map image">
+      <mat-card-content>
+        <p>Score: {{fart.score}}</p>
+        <p>Smell: {{fart.smell_scale}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
-
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://maps.googleapis.com/maps/api/staticmap?center=Denver,CO&zoom=13&size=300x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&key=" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
