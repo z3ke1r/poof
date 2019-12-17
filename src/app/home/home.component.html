@@ -1,9 +1,10 @@
 
-<div fxLayout='row' fxLayoutWrap class="cards">
+<div fxLayout='column' fxLayoutWrap class="cards">
 
-  <div fxFlex="20" class="example-card" *ngFor="let fart of farts.results">
+  <div fxFlex="20" class="fart-card" *ngFor="let fart of farts.results">
     <mat-card>
       <mat-card-header>
+        <div mat-card-avatar class="header-profile-image"></div>
         <mat-card-title>{{fart.user.username}}</mat-card-title>
         <mat-card-subtitle>{{fart.type.name}}</mat-card-subtitle>
       </mat-card-header>
@@ -17,8 +18,24 @@
         <button mat-button>
           <mat-icon>favorite</mat-icon>
         </button>
-        <button mat-button>SHARE</button>
+        <button mat-button>
+          <mat-icon>share</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon>mode_comment</mat-icon>
+        </button>
       </mat-card-actions>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          Comments (1)
+        </mat-expansion-panel-header>
+
+        <ng-template matExpansionPanelContent>
+          <mat-chip-list>
+            <mat-chip>That fart must have stunk</mat-chip>
+          </mat-chip-list>
+        </ng-template>
+      </mat-expansion-panel>
     </mat-card>
   </div>
 </div>
