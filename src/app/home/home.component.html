@@ -1,41 +1,27 @@
 
-<div fxLayout='column' fxLayoutWrap class="cards">
-
-  <div fxFlex="20" class="fart-card" *ngFor="let fart of farts.results">
-    <mat-card>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-card class="weekly-top-poofer-card">
       <mat-card-header>
-        <div mat-card-avatar class="header-profile-image"></div>
-        <mat-card-title>{{fart.user.username}}</mat-card-title>
-        <mat-card-subtitle>{{fart.ftype.name}}</mat-card-subtitle>
+        <div mat-card-avatar class="profile-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="https://maps.googleapis.com/maps/api/staticmap?center=Denver,CO&zoom=13&size=300x300&maptype=roadmap
-         &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&key=" alt="Static map image">
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
       <mat-card-content>
-        <p>Score: {{fart.score}}</p>
-        <p>Smell: {{fart.smell_scale}}</p>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>
-          <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-button>
-          <mat-icon>share</mat-icon>
-        </button>
-        <button mat-button>
-          <mat-icon>mode_comment</mat-icon>
-        </button>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
       </mat-card-actions>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          Comments (1)
-        </mat-expansion-panel-header>
-
-        <ng-template matExpansionPanelContent>
-          <mat-chip-list>
-            <mat-chip>That fart must have stunk</mat-chip>
-          </mat-chip-list>
-        </ng-template>
-      </mat-expansion-panel>
     </mat-card>
-  </div>
-</div>
+  </mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
