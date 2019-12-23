@@ -17,7 +17,7 @@ export class DataService {
     return this.httpClient.get(this.FART_ENDPOINT); }
   
   public getUserFarts(username) {
-    console.log(this.httpClient.get(this.FART_QUERY));
+    console.log(this.httpClient.get(this.FART_QUERY + username));
     return this.httpClient.get(this.FART_QUERY); }
 
 }
