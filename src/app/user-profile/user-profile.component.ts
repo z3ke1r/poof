@@ -13,7 +13,7 @@ export class UserProfileComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getUserFarts('admin').subscribe(data => {
+    this.dataService.getUserFarts('username=admin').subscribe(data => {
       console.log(data);
       this.farts = data;
     });
