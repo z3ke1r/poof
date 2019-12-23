@@ -21,9 +21,9 @@
       [rowspan]="2">
     <mat-list>
       <h3 mat-subheader>Poofs</h3>
-      <mat-list-item *ngFor="let fart of farts">
+      <mat-list-item *ngFor="let fart of farts.results">
         <mat-icon mat-list-icon>cloud</mat-icon>
-        <h4 mat-line>{{fart.ftype}}</h4>
+        <h4 mat-line>{{fart.ftype.name}}</h4>
         <p mat-line> Score:{{fart.score}}, Smell: {{fart.smell_scale}}, Loudness: {{fart.noise_scale}} </p>
         <p mat-line> {{fart.date_farted | date}} </p>
       </mat-list-item>
