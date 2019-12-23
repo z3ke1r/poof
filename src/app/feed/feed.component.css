@@ -1,0 +1,13 @@
+.fart-card {
+  min-width: 100%;
+  margin: 40px;
+
+}
+.cards {
+  width: 400px;
+}
+
+.header-profile-image {
+  background-image: url('https://pbs.twimg.com/media/DwcWHyVUcAASBvA.jpg');
+  background-size: cover;
+}
