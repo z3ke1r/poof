@@ -1,5 +1,6 @@
 <mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile>
+  <mat-grid-tile
+      [rowspan]="2">
     <mat-card class="profile-card">
       <mat-card-header>
         <div mat-card-avatar class="profile-header-image"></div>
@@ -14,14 +15,6 @@
           User Score: 1,550
         </p>
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>
-          <mat-icon>edit</mat-icon>
-        </button>
-        <button mat-button>
-          <mat-icon>share</mat-icon>
-        </button>
-      </mat-card-actions>
     </mat-card>
   </mat-grid-tile>
   <mat-grid-tile
